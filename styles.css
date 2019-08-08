@@ -1,0 +1,129 @@
+body{
+  font-family:monospace;
+  background-color: #502419;
+}
+
+h1{
+  font-size:50px;
+  text-align:center;
+  color: #E28413;
+}
+
+.container{
+  display:flex;
+  flex-flow:row wrap;
+}
+
+.container2{
+  display:flex;
+  flex-flow:row wrap;
+}
+
+p{
+  font-size: 20px;
+  padding: 30px;
+  color:#FCF7FF;
+  background-color: #E28413;
+  margin: 50px;
+  border: solid #822E81 15px;
+}
+
+img{
+  border: 5px dashed #E28413;
+  padding: 3px;
+  margin:10px;
+  object-fit:cover;
+}
+
+.angry{
+  height:500px;
+  float:left;
+  }
+
+.bean{
+  float:left;
+  height:200px;
+}
+
+.cuddle{
+  float:right;
+  width:400px;
+}
+
+.bun{
+  float:right;
+  height:200px;
+  position:absolute;
+  bottom:160px;
+  left:440px;
+}
+
+.gramps{
+  width:400px;
+  position: relative;
+  top:0px;
+  left:0px;
+}
+
+@media screen and (max-width: 900px){
+  img{
+    width:90%;
+    align-self: center;
+  }
+  .container{
+    flex-flow:row wrap;
+  }
+  .bun{
+    height:200px;
+    position: relative;
+    top:0px;
+    left:0px;
+  }
+  .gramps{
+    width:400px;
+    position:absolute;
+    top:670px;
+    left:50px;
+  }
+
+}
+@media screen and (max-width: 1000px){
+  .cuddle{
+    float:left;
+  }
+  p{
+    float:right;
+  }
+  .gramps{
+    position: relative;
+    top:0px;
+    left:0px;
+  }
+  .bun{
+    bottom:90px;
+  }
+}
+
+
+@media screen and (min-width:1000px){
+  .bun{
+    bottom:120px;
+  }
+  .gramps{
+    position: relative;
+    top:0px;
+    left:0px;
+  }
+}
+
+@media screen and (min-width:1400px){
+  .bun{
+    bottom:135px;
+  }
+  .gramps{
+    width:400px;
+    position:absolute;
+    top:670px;
+    left:50px;
+  }
+}
